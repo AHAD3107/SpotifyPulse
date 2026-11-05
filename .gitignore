@@ -1,0 +1,59 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+dist/
+build/
+eggs/
+.eggs/
+*.egg-info/
+*.egg
+
+# Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+
+# Environment Variables & Secrets
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# Testing & Linting
+.pytest_cache/
+.coverage
+htmlcov/
+.coverage.*
+.ruff_cache/
+
+# Local Data Storage (Keep directory structures via .gitkeep)
+data/bronze/*
+!data/bronze/.gitkeep
+data/staging/*
+!data/staging/.gitkeep
+data/demo/*
+!data/demo/.gitkeep
+data/dead_letter/*
+
+# dbt Artifacts
+dbt/target/
+dbt/dbt_packages/
+dbt/logs/
+
+# Apache Airflow Logs & State
+airflow/logs/
+airflow/*.pid
+airflow/*.db
+
+# IDE & OS Specific
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
